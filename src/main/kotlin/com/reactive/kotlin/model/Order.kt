@@ -4,18 +4,18 @@ import com.reactive.kotlin.model.enums.OrderStatus
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
 import java.util.Date
-@Table
+@Table("orders")
 data class Order (
-    val orderKey:String,
+    val orderKey:String?=null,
     @Id
     val orderNo:String,
-    val customerId:String,
-    val rewards: Rewards,
-    val orderDate:Date,
-    val orderStatus:OrderStatus,
-    val totalItems:Int,
-    val orderTotal:Int,
-    val lastModifiedTS:Date
+    var customerId:String,
+    var rewardId: String,
+    var orderDate:String?=null,
+    var orderStatus:String="Created",
+    var totalItems:Int,
+    var orderTotal:Int,
+    var lastModifiedTS:String?=null
 )
 
 /*

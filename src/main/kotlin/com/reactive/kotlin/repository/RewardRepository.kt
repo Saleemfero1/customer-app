@@ -1,7 +1,7 @@
 package com.reactive.kotlin.repository
 
-import com.reactive.kotlin.model.Rewards
+import com.reactive.kotlin.model.Reward
 import org.springframework.data.repository.reactive.ReactiveCrudRepository
 
-interface RewardRepository:ReactiveCrudRepository<Rewards,String> {
+interface RewardRepository:ReactiveCrudRepository<Reward,String> {
 }
