@@ -1,0 +1,11 @@
+#spring:
+#  r2dbc:
+#    url: r2dbc:mysql://localhost:3306/EMPLOYEEDATA
+#server:
+#  port: 8080 # Change to your desired port
+#
+##logging:
+##  level:
+##    root: INFO
+##    org.springframework.web: INFO
+##    io.r2dbc: DEBUG # Adjust logging level for R2DBC if needed
